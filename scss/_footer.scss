@@ -1,0 +1,37 @@
+
+/*Estilos Footer*/
+
+footer{
+    background-color: #4153607e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    nav{
+        ul{
+            h3{
+            .redes{
+            color: #133954;
+            background-color: #4153607e;
+            display: flex; 
+                }
+            } 
+            li{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #133954;
+                }
+            } 
+        }
+    }    
+    .logo{
+    width: 150px;
+    height: 150px;
+    }
+    
+}

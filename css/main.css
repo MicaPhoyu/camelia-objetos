@@ -1,0 +1,85 @@
+/*Estilos Header*/
+header {
+  background-color: rgba(65, 83, 96, 0.4941176471);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 150px;
+  height: 150px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #133954;
+  font-weight: bold;
+}
+
+/*Estilos main-index*/
+.main-index {
+  min-height: 100vh;
+  background-image: url(./../assets/background.png.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.main-index .contenedor-productos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.main-index .card {
+  width: 350px;
+  height: 350px;
+  border: 2px solid rgba(65, 83, 96, 0.4941176471);
+  background-color: rgba(19, 57, 84, 0.3294117647);
+  border-radius: 90px;
+  overflow: hidden;
+}
+.main-index .card img {
+  width: 100%;
+  height: 250px;
+}
+.main-index .card .card-text {
+  display: flex;
+  color: azure;
+  flex-direction: column;
+  align-items: center;
+  height: 130px;
+  text-align: center;
+}
+
+/*Estilos Footer*/
+footer {
+  background-color: rgba(65, 83, 96, 0.4941176471);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav ul h3 .redes {
+  color: #133954;
+  background-color: rgba(65, 83, 96, 0.4941176471);
+  display: flex;
+}
+footer nav ul li img {
+  width: 20px;
+  height: 20px;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #133954;
+}
+footer .logo {
+  width: 150px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=main.css.map */

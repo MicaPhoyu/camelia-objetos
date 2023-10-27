@@ -12,89 +12,6 @@ html{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*Selector único, se declara con id y se llama con # 
-pero no se usa mucho en CSS*/
-/*orden de jerarquia: Selector en linea, ID, class, etiqueta
-(al menos que se le ponga la palabra "important", mas que nada para ver errores) */
-
-/*ESTILOS HEADER*/
-
-/*(usando el h1 momentaneamente como logo, todavia no me lo pasaron)*/
-/*h1{
-    color: #133954;
-}
-
-/*Especificidad*/
-
-header{
-    background-color: #4153607e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav ul{
-    list-style: none;
-    display: flex;
-    column-gap: 15px;
-    
-}
-.logo{
-    width: 150px;
-    height: 150px;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    font-size: 22px;
-    color: #133954;
-    /*text-transform: capitalize;*/
-    font-weight: bold;
-}
-
-/*ESTILOS MAIN INICIO*/
-main{
-    min-height: 100vh;
-    background-image: url(./../assets/background.png.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover ;
-
-}
-
-.contenedor-productos{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 50px;
-
-}
-
-.card{
-    width: 350px;
-    height: 350px;
-    border: 2px solid #4153607e;
-    background-color: #13395454;
-    border-radius: 90px;
-    overflow: hidden;
-}
-
-.card img{
-    width: 100%;
-    height: 250px;
-}
-
-.card-text{
-    display: flex;
-    color: azure;
-    flex-direction: column;
-    align-items: center;
-    height: 130px;
-    text-align: center;
-    
-}
-
-
 /*ESTILOS MAIN TIENDA Y CURSO*/
 .construccion{
     color: antiquewhite;
@@ -182,29 +99,7 @@ main{
     grid-column: span 2;
 }
 
-/*ESTILOS GENERALES FOOTER*/
 
-/*Selector de clase*/
-footer{
-    background-color: #4153607e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.redes{
-    color: #133954;
-    background-color: #4153607e;
-    display: flex;
-}
-
-.logo-insta img{
-    width: 20px;
-    height: 20px;
-}
-.logo-insta a{
-    text-decoration: none;
-    color: #133954;
-}
 
 /*-------------------- MEDIA QUERY ---------------------*/
 
