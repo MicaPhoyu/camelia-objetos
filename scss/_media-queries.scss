@@ -1,0 +1,58 @@
+/*-----MEDIAQUERY TABLET-----*/
+
+@media screen and (max-width: 1024px){
+
+    header{
+        flex-direction: row;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+    font-size: 18px;
+    }
+    .inicio-telas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 30rem);
+    }
+
+    .contenedor-acerca-de {
+        grid-template-areas: "contenido contenido contenido"
+                            "perfil perfil perfil"
+                        "recomendaciones recomendaciones dibujo-flor";
+    }
+    .contacto{
+        grid-template-areas: 
+        "mapa"
+        "form";
+    }
+}
+
+/*----- MEDIA QUERY MOBILE-----*/
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li a{
+    font-size: 12px;
+    }
+
+    .contenedor-acerca-de {
+        grid-template-areas: "contenido contenido contenido"
+                            "perfil perfil perfil"
+                        "recomendaciones recomendaciones recomendaciones"
+                        "dibujo-flor dibujo-flor dibujo-flor";
+    }
+}
+
+

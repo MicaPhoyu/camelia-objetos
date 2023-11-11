@@ -1,0 +1,50 @@
+
+/*Estilos CURSOS*/
+
+.cursos{
+    background-color: #D0E2E4;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "cursos-texto1 cursos-img1"
+                        "cursos-img2 cursos-texto2"
+                        "cursos-texto3 cursos-img3";
+                        .cursos-texto1{
+                            grid-area: cursos-texto1;
+                        }
+                        .cursos-texto2{
+                            grid-area: cursos-texto2;
+                        }
+                        .cursos-texto3{
+                            grid-area: cursos-texto3;
+                        }
+                        .cursos-img1{
+                            grid-area: cursos-img1;
+                        }
+                        .cursos-img2{
+                            grid-area: cursos-img2;
+                        }
+                        .cursos-img3{
+                            grid-area: cursos-img3;
+                        }
+                        .cursos-btn{
+                            border-width: 0.1rem;
+                            padding: 0.5rem;
+                            border-color: #133954;
+                            border-style: solid;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            color: #133954;
+                            &:hover{
+                                border-width: 0.1rem;
+                                padding: 0.5rem;
+                                background-color: #1339543a;
+                                border-color: #7ed0da;
+                                border-style: solid;
+                                border-radius: 10px;
+                                color: aliceblue;
+                            }
+                        }
+}

@@ -1,0 +1,46 @@
+/*Estilos CONTACTO*/
+
+.contacto{
+    background-color:#D0E2E4;
+    max-width: 100%;
+    margin: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    align-items: center;
+    grid-template-areas: "mapa form";
+    .mapa{
+        justify-self: left;
+        grid-area: mapa;
+    }
+    .contenedor-contacto{
+        font-size: 22px;
+        color: aliceblue;
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-area: form;
+        .contacto-btn{
+            border-width: 0.1rem;
+            padding: 0.5rem;
+            border-color: #133954;
+            border-style: solid;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #133954;
+            &:hover{
+                border-width: 0.1rem;
+                padding: 0.5rem;
+                background-color: #1339543a;
+                border-color: #7ed0da;
+                border-style: solid;
+                border-radius: 10px;
+                color: aliceblue;
+            }
+        }
+    }
+}

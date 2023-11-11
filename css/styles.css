@@ -1,10 +1,113 @@
 /*Estilos generales*/
 
+/*------nuevo inicio-----*/
+/*.banner{
+    height: 30rem;
+    background-image: url(../assets/inicio-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner-contenido{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 12rem 0;
+}
+.banner-contenido p{
+    color: #b5bfc0;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+}*/
+/*
+.inicio-banner {
+    height: 65rem;
+    background-image: url(../assets/inicio-banner.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-contenido {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+  }
+  
+  .banner-contenido p {
+    color: antiquewhite;
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+  */
+/*
+.inicio-telas-titulo{
+    text-align: center;
+    padding: 100px 0 15px 0;
+    font-size: x-large;
+}
+
+.inicio-telas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.inicio-telas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.inicio-lisas{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+*/
+/*
+.inicio-cursos{
+    background-color: #D0E2E4;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inicio-cursos-texto{
+    max-width: 70%;
+    margin: 1rem;
+    grid-column: 1/2;
+    text-align: right;
+    align-items: end;
+    padding-left: 4rem;
+}
+.inicio-cursos-img{
+    max-width: 50%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-items: start;
+}
+.inicio-cursos-btn{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    border-color: #133954;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #133954;
+}
+.inicio-cursos-btn:hover{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    background-color: #1339543a;
+    border-color: #7ed0da;
+    border-style: solid;
+    border-radius: 10px;
+    color: aliceblue;
+}
+*/
 
 /*Selector etiqueta*/
 *{
     margin: 0;
-    padding: 0;
+    padding: 5px 0 10px 0;
     box-sizing: border-box;
 }
 
@@ -13,14 +116,111 @@ html{
 }
 
 /*ESTILOS MAIN TIENDA Y CURSO*/
-.construccion{
-    color: antiquewhite;
-    font-size: xx-large;
-    width: 300px;
-    height: 1000px;
+
+img{
+    max-width: 100%;
+}
+/*
+.tienda{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
+.item-tienda{
+    border-radius: 10px;
+}
+.item-tienda:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+.item-tienda img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.item-tienda figure{
+    overflow: hidden;
+}
+.item-tienda:hover img{
+    transform: scale(1.2);
+}
+*/
+/*
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #133954;
+    color: #D0E2E4;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+*/
+/*ESTILOS MAIN "CURSOS"*/
+/*
+.cursos{
+    background-color: #D0E2E4;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "cursos-texto1 cursos-img1"
+                        "cursos-img2 cursos-texto2"
+                        "cursos-texto3 cursos-img3";
+}
+
+.cursos-texto1{
+    grid-area: cursos-texto1;
+}
+.cursos-texto2{
+    grid-area: cursos-texto2;
+}
+.cursos-texto3{
+    grid-area: cursos-texto3;
+}
+.cursos-img1{
+    grid-area: cursos-img1;
+}
+.cursos-img2{
+    grid-area: cursos-img2;
+}
+.cursos-img3{
+    grid-area: cursos-img3;
+}
+.cursos-btn{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    border-color: #133954;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #133954;
+}
+.cursos-btn:hover{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    background-color: #1339543a;
+    border-color: #7ed0da;
+    border-style: solid;
+    border-radius: 10px;
+    color: aliceblue;
+}
+*/
+
+
 /*ESTILOS MAIN "ACERCA DE" (voy a usar GRID)*/
+/*
 .contenedor-acerca-de{
     font-size: 22px;
     color: aliceblue;
@@ -78,32 +278,62 @@ html{
     height: 90px;
     width: 90px;
 }
-
+*/
 /*ESTILOS MAIN "CONTACTO" (voy a usar GRID)*/
+/*
+.contacto{
+    background-color:#D0E2E4;
+    max-width: 100%;
+    margin: 10px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr);
+    align-items: center;
+    grid-template-areas: "mapa form";
+}
+.mapa{
+    justify-self: left;
+    grid-area: mapa;
+}
+
 .contenedor-contacto{
     font-size: 22px;
     color: aliceblue;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto)
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-area: form;
 }
-
-.contenedor-contacto .contacto-titulo{
-    background: #D0E2E4;
-    padding: 10px;
-    border-radius: 40px;
+.contacto-btn{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    border-color: #133954;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
     color: #133954;
-    grid-column: span 2;
 }
-
+.contacto-btn:hover{
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    background-color: #1339543a;
+    border-color: #7ed0da;
+    border-style: solid;
+    border-radius: 10px;
+    color: aliceblue;
+}
+*/
+/*------------------footer---------------*/
 
 
 /*-------------------- MEDIA QUERY ---------------------*/
 
 /*-----MEDIAQUERY TABLET-----*/
+/*
 @media screen and (max-width: 1024px){
 
     header{
@@ -117,17 +347,26 @@ html{
     header nav ul li a{
     font-size: 18px;
     }
-
+    .inicio-telas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 30rem);
+    }
 
     .contenedor-acerca-de {
         grid-template-areas: "contenido contenido contenido"
                             "perfil perfil perfil"
                         "recomendaciones recomendaciones dibujo-flor";
     }
+    .contacto{
+        grid-template-areas: 
+        "mapa"
+        "form";
+    }
 }
 
 /*----- MEDIA QUERY MOBILE-----*/
-
+/*
 @media screen and (max-width: 768px){
 
     header{
@@ -142,7 +381,6 @@ html{
     font-size: 12px;
     }
 
-
     .contenedor-acerca-de {
         grid-template-areas: "contenido contenido contenido"
                             "perfil perfil perfil"
@@ -150,3 +388,4 @@ html{
                         "dibujo-flor dibujo-flor dibujo-flor";
     }
 }
+*/

@@ -1,38 +1,65 @@
+
 /*Estilos main-index*/
-
 .main-index{
-    min-height: 100vh;
-    background-image: url(./../assets/background.png.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover ;
-
-    .contenedor-productos{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 50px;
+    .inicio-telas-titulo{
+        text-align: center;
+        padding: 100px 0 15px 0;
+        font-size: x-large;
     }
-    .card{
-        width: 350px;
-        height: 350px;
-        border: 2px solid #4153607e;
-        background-color: #13395454;
-        border-radius: 90px;
-        overflow: hidden;
+    .inicio-telas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 30rem);
+        gap: 1.5rem;
+        margin-bottom: 3rem;
         img{
             width: 100%;
-            height: 250px;
-        }
-        .card-text{
-        display: flex;
-        color: azure;
-        flex-direction: column;
-        align-items: center;
-        height: 130px;
-        text-align: center;
-        
-        }
+            height: 100%;
+            object-fit: cover;
+            }
+            .inicio-lisas{
+                grid-column: 2/4;
+                grid-row: 1/3;
+            }
     }
+    .inicio-cursos{
+        background-color: #D0E2E4;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .inicio-cursos-texto{
+            max-width: 70%;
+            margin: 1rem;
+            grid-column: 1/2;
+            text-align: right;
+            align-items: end;
+            padding-left: 4rem;
+            .inicio-cursos-btn{
+                border-width: 0.1rem;
+                padding: 0.5rem;
+                border-color: #133954;
+                border-style: solid;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #133954;
+                &:hover{
+                    border-width: 0.1rem;
+                    padding: 0.5rem;
+                    background-color: #1339543a;
+                    border-color: #7ed0da;
+                    border-style: solid;
+                    border-radius: 10px;
+                    color: aliceblue;
+                }
+                }
+            }
+        .inicio-cursos-img{
+            max-width: 50%;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-items: start;
+            }
+        }
 }
+
+

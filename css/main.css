@@ -21,40 +21,281 @@ header nav ul li a {
   font-weight: bold;
 }
 
-/*Estilos main-index*/
-.main-index {
-  min-height: 100vh;
-  background-image: url(./../assets/background.png.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+/* Estilos banner*/
+.banner {
+  height: 30rem;
+  background-image: url(../assets/inicio-banner.jpg);
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.main-index .contenedor-productos {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 50px;
+.banner .banner-contenido {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 12rem 0;
 }
-.main-index .card {
-  width: 350px;
-  height: 350px;
-  border: 2px solid rgba(65, 83, 96, 0.4941176471);
-  background-color: rgba(19, 57, 84, 0.3294117647);
-  border-radius: 90px;
+.banner .banner-contenido p {
+  color: #b5bfc0;
+  font-size: 4rem;
+  font-weight: bolder;
+  position: absolute;
+}
+
+/*Estilos main-index*/
+.main-index .inicio-telas-titulo {
+  text-align: center;
+  padding: 100px 0 15px 0;
+  font-size: x-large;
+}
+.main-index .inicio-telas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 30rem);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.main-index .inicio-telas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-index .inicio-telas .inicio-lisas {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.main-index .inicio-cursos {
+  background-color: #D0E2E4;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-index .inicio-cursos .inicio-cursos-texto {
+  max-width: 70%;
+  margin: 1rem;
+  grid-column: 1/2;
+  text-align: right;
+  align-items: end;
+  padding-left: 4rem;
+}
+.main-index .inicio-cursos .inicio-cursos-texto .inicio-cursos-btn {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  border-color: #133954;
+  border-style: solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #133954;
+}
+.main-index .inicio-cursos .inicio-cursos-texto .inicio-cursos-btn:hover {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  background-color: rgba(19, 57, 84, 0.2274509804);
+  border-color: #7ed0da;
+  border-style: solid;
+  border-radius: 10px;
+  color: aliceblue;
+}
+.main-index .inicio-cursos .inicio-cursos-img {
+  max-width: 50%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-items: start;
+}
+
+/*Estilos TIENDA*/
+.tienda {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.tienda .item-tienda {
+  border-radius: 10px;
+}
+.tienda .item-tienda figure {
   overflow: hidden;
 }
-.main-index .card img {
+.tienda .item-tienda figure img {
   width: 100%;
-  height: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
 }
-.main-index .card .card-text {
+.tienda .item-tienda figure:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.tienda .item-tienda figure:hover img {
+  transform: scale(1.2);
+}
+.tienda .item-tienda .info-producto {
+  padding: 15px 30px;
+  line-height: 2;
   display: flex;
-  color: azure;
+  flex-direction: column;
+  gap: 10px;
+}
+.tienda .item-tienda .info-producto .btn {
+  border: none;
+  background: none;
+  background-color: #133954;
+  color: #D0E2E4;
+  font-size: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/*Estilos CURSOS*/
+.cursos {
+  background-color: #D0E2E4;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "cursos-texto1 cursos-img1" "cursos-img2 cursos-texto2" "cursos-texto3 cursos-img3";
+}
+.cursos .cursos-texto1 {
+  grid-area: cursos-texto1;
+}
+.cursos .cursos-texto2 {
+  grid-area: cursos-texto2;
+}
+.cursos .cursos-texto3 {
+  grid-area: cursos-texto3;
+}
+.cursos .cursos-img1 {
+  grid-area: cursos-img1;
+}
+.cursos .cursos-img2 {
+  grid-area: cursos-img2;
+}
+.cursos .cursos-img3 {
+  grid-area: cursos-img3;
+}
+.cursos .cursos-btn {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  border-color: #133954;
+  border-style: solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #133954;
+}
+.cursos .cursos-btn:hover {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  background-color: rgba(19, 57, 84, 0.2274509804);
+  border-color: #7ed0da;
+  border-style: solid;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+/*Estilos NOSOTROS*/
+.contenedor-acerca-de {
+  font-size: 22px;
+  color: aliceblue;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "contenido contenido perfil" "recomendaciones dibujo-flor perfil";
+}
+
+.contenedor-acerca-de div,
+.contenedor-acerca-de .contenido,
+.contenedor-acerca-de .perfil,
+.contenedor-acerca-de .recomendaciones,
+.contenedor-acerca-de .dibujo-flor-camelia {
+  background: #D0E2E4;
+  padding: 20px;
+  border-radius: 40px;
+  color:#133954;
+}
+
+.contenedor-acerca-de .contenido {
+  grid-area: contenido;
+}
+
+.contenedor-acerca-de .perfil {
+  text-align: center;
+  grid-area: perfil;
+}
+
+.contenedor-acerca-de .recomendaciones {
+  grid-column: 1/2;
+  text-align: center;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  height: 130px;
+  justify-content: center;
+  height: 200px;
+  grid-area: recomendaciones;
+}
+
+.contenedor-acerca-de .dibujo-flor-camelia {
+  grid-column: 2/3;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  grid-area: dibujo-flor;
+}
+.contenedor-acerca-de .dibujo-flor-camelia img {
+  height: 90px;
+  width: 90px;
+}
+
+/*Estilos CONTACTO*/
+.contacto {
+  background-color: #D0E2E4;
+  max-width: 100%;
+  margin: 10px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr);
+  align-items: center;
+  grid-template-areas: "mapa form";
+}
+.contacto .mapa {
+  justify-self: left;
+  grid-area: mapa;
+}
+.contacto .contenedor-contacto {
+  font-size: 22px;
+  color: aliceblue;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-area: form;
+}
+.contacto .contenedor-contacto .contacto-btn {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  border-color: #133954;
+  border-style: solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #133954;
+}
+.contacto .contenedor-contacto .contacto-btn:hover {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  background-color: rgba(19, 57, 84, 0.2274509804);
+  border-color: #7ed0da;
+  border-style: solid;
+  border-radius: 10px;
+  color: aliceblue;
 }
 
 /*Estilos Footer*/
@@ -80,6 +321,45 @@ footer nav ul li a {
 footer .logo {
   width: 150px;
   height: 150px;
+}
+
+/*-----MEDIAQUERY TABLET-----*/
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li a {
+    font-size: 18px;
+  }
+  .inicio-telas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 30rem);
+  }
+  .contenedor-acerca-de {
+    grid-template-areas: "contenido contenido contenido" "perfil perfil perfil" "recomendaciones recomendaciones dibujo-flor";
+  }
+  .contacto {
+    grid-template-areas: "mapa" "form";
+  }
+}
+/*----- MEDIA QUERY MOBILE-----*/
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li a {
+    font-size: 12px;
+  }
+  .contenedor-acerca-de {
+    grid-template-areas: "contenido contenido contenido" "perfil perfil perfil" "recomendaciones recomendaciones recomendaciones" "dibujo-flor dibujo-flor dibujo-flor";
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,3 +26,23 @@ header{
     }
 
 }
+/* Estilos banner*/
+
+.banner{
+    height: 30rem;
+    background-image: url(../assets/inicio-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .banner-contenido{
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 12rem 0;
+        p{
+        color: #b5bfc0;
+        font-size: 4rem;
+        font-weight: bolder;
+        position: absolute;    
+        }
+    }
+}
